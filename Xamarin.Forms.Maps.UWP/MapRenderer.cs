@@ -54,7 +54,7 @@ namespace Xamarin.Forms.Maps.UWP
 
 				await Control.Dispatcher.RunIdleAsync(async (i) => await MoveToRegion(mapModel.LastMoveToRegion, MapAnimationKind.None));
 				await UpdateIsShowingUser();
-            		}
+           	}
 		}
 
 		protected override async void OnElementPropertyChanged(object sender, PropertyChangedEventArgs e)
@@ -121,8 +121,8 @@ namespace Xamarin.Forms.Maps.UWP
 
 		void LoadPins()
 		{
-			foreach (var pin in Element.Pins)
-				LoadPin(pin);
+			//foreach (var pin in Element.Pins)
+			//	LoadPin(pin);
 		}
 
 		void ClearPins()
@@ -164,7 +164,6 @@ namespace Xamarin.Forms.Maps.UWP
 					if (userPosition?.Coordinate != null)
 						LoadUserPosition(userPosition.Coordinate, moveToLocation);
 				}
-
 				if (Control == null || Element == null) return;
 
 				if (_timer == null)
