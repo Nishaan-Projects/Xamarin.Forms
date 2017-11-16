@@ -124,7 +124,6 @@
       <Name>Xamarin.Forms.Core</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup /> 
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
